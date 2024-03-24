@@ -1,0 +1,15 @@
+// Main loop
+    while (1) {
+        // Check if the button is pressed
+        if (button == 0) {
+            // Increment the count when the button is pressed
+            pressCount++;
+            
+            // Print the updated count
+            printf("Total button presses: %d\n", pressCount);
+            
+            // Wait for button release to avoid counting multiple presses
+            while (button == 0);
+        }
+    }
+}
